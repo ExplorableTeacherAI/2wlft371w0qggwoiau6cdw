@@ -1,11 +1,10 @@
 import { type ReactElement } from "react";
 import { Block } from "@/components/templates";
 import { StackLayout, SplitLayout } from "@/components/layouts";
-import { EditableH2, EditableParagraph, InlineScrubbleNumber, InlineSpotColor, InlineToggle } from "@/components/atoms";
+import { EditableH2, EditableParagraph, InlineScrubbleNumber, InlineSpotColor, InlineToggle, InteractionHintSequence } from "@/components/atoms";
 import { FormulaBlock } from "@/components/molecules";
 import { getVariableInfo, numberPropsFromDefinition, togglePropsFromDefinition, scrubVarsFromDefinitions } from "../variables";
 import { useVar } from "@/stores";
-import { InteractionHintSequence } from "@/components/atoms/visual/InteractionHintSequence";
 
 // Animal data with speeds and emojis
 const animalData: Record<string, { emoji: string; typicalSpeed: number; name: string; color: string }> = {
