@@ -31,8 +31,8 @@ export const speedIntroductionBlocks: ReactElement[] = [
     <StackLayout key="layout-speed-race-image" maxWidth="xl">
         <Block id="speed-race-image" padding="sm">
             <ImageDisplay
-                src="https://img.freepik.com/free-vector/cute-cheetah-running-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-premium_138676-7794.jpg"
-                alt="A cartoon cheetah running fast"
+                src="https://images.unsplash.com/photo-1456926631375-92c8ce872def?w=800"
+                alt="A cheetah running fast"
                 caption="A cheetah can run very fast — up to 120 km/h!"
                 bordered
             />
