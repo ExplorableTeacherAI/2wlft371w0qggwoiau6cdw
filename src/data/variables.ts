@@ -78,83 +78,127 @@ export interface VariableDefinition {
  */
 export const variableDefinitions: Record<string, VariableDefinition> = {
     // ========================================
-    // ADD YOUR VARIABLES HERE
+    // SPEED LESSON VARIABLES
     // ========================================
 
-    // Uncomment and modify these examples for your lesson:
-
-    /*
-    // ─────────────────────────────────────────
-    // NUMBER - Use with sliders
-    // ─────────────────────────────────────────
-    myValue: {
-        defaultValue: 5,
+    // Section 2: Distance
+    distanceWalked: {
+        defaultValue: 100,
         type: 'number',
-        label: 'My Value',
-        description: 'A number that controls something',
-        unit: 'm',           // optional unit display
-        min: 0,
-        max: 10,
-        step: 0.5,
+        label: 'Distance Walked',
+        description: 'Distance in metres for walking example',
+        unit: 'm',
+        min: 10,
+        max: 500,
+        step: 10,
+        color: '#62D0AD',
     },
 
-    // ─────────────────────────────────────────
-    // TEXT - Free text input
-    // ─────────────────────────────────────────
-    lessonTitle: {
-        defaultValue: 'My Lesson',
-        type: 'text',
-        label: 'Lesson Title',
-        description: 'The title of your lesson',
-        placeholder: 'Enter a title...',
+    // Section 3: Time
+    timeTaken: {
+        defaultValue: 10,
+        type: 'number',
+        label: 'Time Taken',
+        description: 'Time in seconds',
+        unit: 's',
+        min: 1,
+        max: 60,
+        step: 1,
+        color: '#8E90F5',
     },
 
-    // ─────────────────────────────────────────
-    // SELECT - Dropdown with options
-    // ─────────────────────────────────────────
-    difficulty: {
-        defaultValue: 'medium',
+    // Section 4: Speed Formula - Animal Race
+    raceDistance: {
+        defaultValue: 100,
+        type: 'number',
+        label: 'Race Distance',
+        description: 'Distance of the race in metres',
+        unit: 'm',
+        min: 10,
+        max: 200,
+        step: 10,
+        color: '#62D0AD',
+    },
+    raceTime: {
+        defaultValue: 10,
+        type: 'number',
+        label: 'Race Time',
+        description: 'Time to complete the race in seconds',
+        unit: 's',
+        min: 1,
+        max: 60,
+        step: 1,
+        color: '#8E90F5',
+    },
+    selectedAnimal: {
+        defaultValue: 'rabbit',
         type: 'select',
-        label: 'Difficulty',
-        description: 'The difficulty level of the lesson',
-        options: ['easy', 'medium', 'hard', 'expert'],
+        label: 'Selected Animal',
+        description: 'Animal to show in the race',
+        options: ['snail', 'tortoise', 'rabbit', 'cheetah'],
+        color: '#F7B23B',
     },
 
-    // ─────────────────────────────────────────
-    // BOOLEAN - Toggle switch
-    // ─────────────────────────────────────────
-    showHints: {
-        defaultValue: true,
-        type: 'boolean',
-        label: 'Show Hints',
-        description: 'Toggle to show or hide hints',
+    // Section 5: Units of Speed
+    speedValue: {
+        defaultValue: 10,
+        type: 'number',
+        label: 'Speed Value',
+        description: 'Speed for unit conversion examples',
+        unit: 'm/s',
+        min: 1,
+        max: 100,
+        step: 1,
+        color: '#AC8BF9',
     },
 
-    // ─────────────────────────────────────────
-    // ARRAY - List of numbers
-    // ─────────────────────────────────────────
-    dataPoints: {
-        defaultValue: [1, 4, 9, 16, 25],
-        type: 'array',
-        label: 'Data Points',
-        description: 'Y-values for plotting a graph',
+    // Section 6: Practice Questions
+    answerSpeedQuestion1: {
+        defaultValue: '',
+        type: 'text',
+        label: 'Speed Question 1 Answer',
+        description: 'Student answer for first speed calculation',
+        placeholder: '?',
+        correctAnswer: '5',
+        color: '#62D0AD',
     },
-
-    // ─────────────────────────────────────────
-    // OBJECT - Complex structured data
-    // ─────────────────────────────────────────
-    graphSettings: {
-        defaultValue: { 
-            xMin: -10, 
-            xMax: 10, 
-            showGrid: true 
-        },
-        type: 'object',
-        label: 'Graph Settings',
-        description: 'Configuration for the graph display',
-        schema: '{ xMin: number, xMax: number, showGrid: boolean }',
+    answerSpeedQuestion2: {
+        defaultValue: '',
+        type: 'text',
+        label: 'Speed Question 2 Answer',
+        description: 'Student answer for second speed calculation',
+        placeholder: '?',
+        correctAnswer: '8',
+        color: '#8E90F5',
     },
-    */
+    answerDistanceQuestion: {
+        defaultValue: '',
+        type: 'text',
+        label: 'Distance Question Answer',
+        description: 'Student answer for distance question',
+        placeholder: '?',
+        correctAnswer: '60',
+        color: '#F7B23B',
+    },
+    answerTimeQuestion: {
+        defaultValue: '',
+        type: 'text',
+        label: 'Time Question Answer',
+        description: 'Student answer for time question',
+        placeholder: '?',
+        correctAnswer: '5',
+        color: '#AC8BF9',
+    },
+    answerUnitChoice: {
+        defaultValue: '',
+        type: 'select',
+        label: 'Unit Choice Answer',
+        description: 'Student answer for unit question',
+        placeholder: '?',
+        correctAnswer: 'km/h',
+        options: ['m/s', 'km/h', 'cm/s'],
+        color: '#F8A0CD',
+    },
 };
 
 /**
